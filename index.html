@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app="juhibags">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Juhibags- Go Green </title>
+    <meta name="description" content="">
+
+    <!-- Mobile specific metas  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="favicon.png" type="image/png" sizes="40x40">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS Style -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- font-awesome & simple line icons CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
+
+    <!-- owl.carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.transitions.css">
+
+    <!-- animate CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all">
+
+    <!-- flexslider CSS -->
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+    <!-- jquery-ui.min CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+
+    <!-- Mean Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+
+    <!-- nivo-slider css -->
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+
+    <!-- style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/localstorage/dist/local-storage.js"></script>
+
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+
+
+
+
+</head>
+
+<body style="background-color:#fff;">
+
+    <div nb-header></div>
+    <div class="container">
+    <div nb-menu></div>
+</div>
+    <div ng-view></div>
+
+
+
+
+
+    <div nb-footer></div>
+
+    <script src="app/app.js"></script>
+
+    <script src="app/header/header.js"></script>
+    <script src="app/header/headerCtrl.js"></script>
+
+    <script src="app/footer/footer.js"></script>
+    <script src="app/footer/footerCtrl.js"></script>
+
+    <script src="app/menu/menu.js"></script>
+    <script src="app/menu/menuCtrl.js"></script>
+    <script src="app/menu/menuSvc.js"></script>
+
+    <script src="app/home/home.js"></script>
+    <script src="app/home/homeCtrl.js"></script>
+
+    <script src="app/men/men.js"></script>
+    <script src="app/men/menCtrl.js"></script>
+    <script src="app/men/menSvc.js"></script>
+
+    <script src="app/viewCart/viewCart.js"></script>
+    <script src="app/viewCart/viewCartCtrl.js"></script>
+
+    <script src="app/quickView/quickView.js"></script>
+    <script src="app/quickView/quickViewCtrl.js"></script>
+
+
+
+
+
+
+    <script src="app/components/components.js"></script>
+    <script src="app/components/componentsDirectives.js"></script>
+
+
+    <!-- main js -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Mean Menu js -->
+    <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+
+    <!-- owl.carousel.min js -->
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+    <!-- bxslider js -->
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+    <!--jquery-ui.min js -->
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+
+    <!-- countdown js -->
+    <script type="text/javascript" src="js/countdown.js"></script>
+
+    <!-- wow JS -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <!-- nivo slider js -->
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+    <!-- flexslider js -->
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        var dthen1 = new Date("12/25/16 11:59:00 PM");
+        start = "08/04/15 03:02:11 AM";
+        start_date = Date.parse(start);
+        var dnow1 = new Date(start_date);
+        if (CountStepper > 0)
+            ddiff = new Date((dnow1) - (dthen1));
+        else
+            ddiff = new Date((dthen1) - (dnow1));
+        gsecs1 = Math.floor(ddiff.valueOf() / 1000);
+
+        var iid1 = "countbox_1";
+        CountBack_slider(gsecs1, "countbox_1", 1);
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+{
+    
+    "products" : [
+            {
+                "id": 0,
+                "name": "Nike Shoes",
+                "image": "images/products/1.png",
+                "SpecialPrice":1800,
+                "OldPrice":1200
+    },
+            {
+                "id": 1,
+                "name": "windows Tab",
+                "image": "images/products/2.png",
+                "SpecialPrice":1600,
+                "OldPrice":2000
+    },
+            
+            {
+                "id": 2,
+                "name": "Nikon Camera",
+                "image": "images/products/3.png",
+                "SpecialPrice":300,
+                "OldPrice":550
+    },
+            {
+                "id": 3,
+                "name": "Head Fones",
+                "image": "images/products/4.png",
+                "SpecialPrice":250,
+                "OldPrice":500
+    },
+            
+            {
+                "id": 4,
+                "name": "laptop",
+                "image": "images/products/1.png",
+                "SpecialPrice":45000,
+                "OldPrice":55000
+    },
+            {
+                "id": 5,
+                "name": "wallet",
+                "image": "images/products/2.png",
+                "SpecialPrice":150,
+                "OldPrice":300
+    },
+            
+            {
+                "id": 6,
+                "name": "keyboard",
+                "image": "images/products/3.png",
+                "SpecialPrice":450,
+                "OldPrice":700
+    },
+            {
+                "id": 7,
+                "name": "mobile",
+                "image": "images/products/4.png",
+                "SpecialPrice":9300,
+                "OldPrice":600
+    }
+    
+    
+   ]
+}

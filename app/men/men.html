@@ -1,0 +1,81 @@
+<div class="main-container col2-left-layout" ng-controller="menCtrl">
+    <div class="container">
+<!--    <div class="category-description"><a href="#"><img src="images/cat-img1.png" alt="banner"></a></div>-->
+      <div class="row">
+        <div class="col-main col-sm-12 col-md-12  col-xs-12 ">
+          
+          <div class="shop-inner">
+            <div class="page-title">
+              <h2>Clothing</h2>
+            </div>
+            
+            <div class="product-grid-area">
+              <ul class="products-grid">
+                <li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12" ng-repeat="prod in products track by $index ">
+                  <div class="product-item">
+                    <div class="item-inner">
+                      <div class="product-thumbnail">
+                        
+<!--
+                          <div class="btn-quickview" > <a href=""> 
+                          <span >Quick View</span></a>
+                          </div>
+-->
+                         <div class="btn-quickview" >
+                         <button  data-toggle="modal" data-target="#myDialog" ng-click="quickView(prod)" >
+                          <a href=""> 
+                          <span >Quick View</span></a>
+                         
+                           </button>
+ 
+    </div> 
+                           
+     <rmv-dialog id="myDialog" title="{{prod.name}}"image="{{prod.image}}"
+                 specialPrice="{{prod.SpecialPrice}}" oldPrice="{{prod.OldPrice}}" >
+
+     </rmv-dialog>                     
+                          
+                          
+                          
+                    
+                          
+                        <a href="single_product.html" class="product-item-photo"> <img class="product-image-photo" src="{{prod.image}}" alt=""></a> </div>
+                      <div class="pro-box-info">
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title"> <a title="Ipsums Dolors Untra" href="single_product.html">{{prod.name}} </a> </div>
+                            <div class="item-content">
+                              <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> {{prod.SpecialPrice}} </span> </p>
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> {{prod.OldPrice}} </span> </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-hover">
+                          <div class="product-item-actions">
+                            <div class="pro-actions">
+                              <button class="action add-to-cart" ng-click="addProductToCart(prod)" type="button" title="Add to Cart"> <span>Add to Cart</span> </button>
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                  
+                <!-- b2 -->
+               
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>

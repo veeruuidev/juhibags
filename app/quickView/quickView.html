@@ -1,0 +1,62 @@
+<div class="modal fade" >
+ <div class="modal-dialog">
+ <div class="modal-content" style=" width:800px;" ng-controller="quickViewCtrl">
+ <div class="modal-header">
+ <button class="close" data-dismiss="modal">&times;</button>
+ <h2 class="modal-title" style="color:#8cc732">{{name}}</h2>
+     <hr>
+ </div>
+ 
+     <div class="modal-body" ng-transclude>
+     
+    <div class="row">
+                    <div class="col-md-4 product_img">
+                        <img src="{{image}}" class="img-responsive">
+                    </div>
+        
+        
+        
+                    <div class="col-md-8 product_content">
+                        <h4>Product Id: <span>51526</span></h4>
+                        <div class="rating">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            (10 reviews)
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        
+                        
+                        
+                        <p class="special-price"> <span class="price-label">Special Price</span> <span class="price"> {{newPrice}} </span> </p>
+                                  <p class="old-price"> <span class="price-label">Regular Price:</span> <span class="price"> {{oldPrice}} </span> </p>
+                        
+                        <div class="space-ten" style="padding: 10px 0;"></div>
+                        <div class="btn-ground">
+                            
+                            
+                            
+                            
+                           <button data-dismiss="modal" class="action add-to-cart btn btn-success" ng-click="addProductToCart(prod)" type="button" title="Add to Cart"> <span class="glyphicon glyphicon-shopping-cart">Add to Cart</span> </button>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+     
+     
+     </div>
+     
+     
+     
+ <div class="modal-footer" >
+     
+     
+ 
+ </div> <!-- modal-footer -->
+ </div> <!-- modal-content -->
+ </div> <!-- modal-dialog -->
+</div> <!-- modal -->
