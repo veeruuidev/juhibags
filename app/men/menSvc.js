@@ -6,7 +6,7 @@
             
            var dfd= $q.defer();
             
-            $http.get("http://192.168.10.227:8080/test/test")
+            $http.get("app/api/product.json")
             .then (function(response){
                    
                         dfd.resolve(response);
