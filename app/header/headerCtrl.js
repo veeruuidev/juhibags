@@ -83,6 +83,7 @@
 
                 var total = $scope.cartItems.length
                 $scope.totalItems = total;
+                
             } else {
 
                 $scope.totalItems = 0;
